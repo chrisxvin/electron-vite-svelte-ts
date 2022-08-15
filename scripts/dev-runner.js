@@ -51,7 +51,7 @@ async function watchMainProcess() {
 function startElectron(RENDERER_URL) {
   let args = [
     '--inspect=5858',
-    path.join(__dirname, '../dist/dev/main.cjs.js'),
+    path.join(__dirname, '../dist/dev/main.js'),
   ]
 
   if (process.env.npm_execpath.endsWith('yarn.js')) {
