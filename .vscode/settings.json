@@ -1,0 +1,41 @@
+{
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "beautify.language": {
+        "js": {
+            "type": ["javascript", "json"],
+            "filename": [".jshintrc", ".jsbeautifyrc"]
+        },
+        "html": ["svelte", "html"]
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+    "javascript.preferences.quoteStyle": "double",
+    "javascript.format.semicolons": "insert",
+    "svelte.enable-ts-plugin": true,
+    "svelte.plugin.svelte.format.config.printWidth": 150,
+    "svelte.plugin.svelte.format.config.singleQuote": false,
+    "svelte.plugin.svelte.format.config.svelteIndentScriptAndStyle": false,
+    "svelte.plugin.svelte.format.config.svelteBracketNewLine": false,
+    "svelte.plugin.svelte.format.config.arrowParens": "avoid",
+    "svelte.plugin.svelte.format.config.endOfLine": "lf",
+    "svelte.plugin.svelte.format.config.jsxBracketSameLine": true,
+    "svelte.plugin.svelte.format.config.semi": true,
+    "svelte.plugin.svelte.format.config.tabWidth": 4,
+    "svelte.plugin.svelte.format.config.trailingComma": "es5",
+    "svelte.plugin.svelte.format.config.svelteSortOrder": "options-styles-scripts-markup",
+    "svelte.plugin.svelte.defaultScriptLanguage": "ts",
+}

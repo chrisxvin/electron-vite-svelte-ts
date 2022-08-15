@@ -1,0 +1,15 @@
+{
+    "printWidth": 150,
+    "singleQuote": false,
+    "arrowParens": "avoid",
+    "endOfLine": "lf",
+    "jsxBracketSameLine": true,
+    "semi": true,
+    "tabWidth": 4,
+    "trailingComma": "es5",
+    "svelteSortOrder" : "options-styles-scripts-markup",
+    "svelteStrictMode": true,
+    "svelteBracketNewLine": false,
+    "svelteAllowShorthand": true,
+    "svelteIndentScriptAndStyle": false
+}

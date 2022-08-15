@@ -214,6 +214,13 @@
   resolved "https://mirrors.huaweicloud.com/repository/npm/@types/pug/-/pug-2.0.6.tgz#f830323c88172e66826d0bde413498b61054b5a6"
   integrity sha512-SnHmG9wN1UVmagJOnyo/qkk0Z7gejYxOYYmaAwr5u2yFYfsupN3sg10kyzN8Hep/2zbHxCnsumxOoRIRMBwKCg==
 
+"@types/rollup-plugin-auto-external@^2.0.2":
+  version "2.0.2"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/@types/rollup-plugin-auto-external/-/rollup-plugin-auto-external-2.0.2.tgz#d1c9697c2445db956df5215d68c35b5fe794b99c"
+  integrity sha512-1Xtl9S4yQapD+A4mX1sqYVXm3UmVA9oIEf2YKEhRTCUNxlAM3DoKK1HPxrGMemDJNfhe6Yl3w0JsAGvIN5j/ow==
+  dependencies:
+    rollup ">=2.0.0"
+
 "@types/sass@^1.16.0":
   version "1.43.1"
   resolved "https://mirrors.huaweicloud.com/repository/npm/@types/sass/-/sass-1.43.1.tgz#86bb0168e9e881d7dade6eba16c9ed6d25dc2f68"
@@ -2340,6 +2347,13 @@ rollup-plugin-auto-external@^2.0.0:
     read-pkg "^3.0.0"
     safe-resolve "^1.0.0"
     semver "^5.5.0"
+
+rollup@>=2.0.0:
+  version "2.78.0"
+  resolved "https://mirrors.huaweicloud.com/repository/npm/rollup/-/rollup-2.78.0.tgz#00995deae70c0f712ea79ad904d5f6b033209d9e"
+  integrity sha512-4+YfbQC9QEVvKTanHhIAFVUFSRsezvQF8vFOJwtGfb9Bb+r014S+qryr9PSmw8x6sMnPkmFBGAvIFVQxvJxjtg==
+  optionalDependencies:
+    fsevents "~2.3.2"
 
 "rollup@>=2.75.6 <2.77.0 || ~2.77.0":
   version "2.77.3"

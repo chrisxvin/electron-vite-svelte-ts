@@ -1,26 +1,26 @@
 {
-  "name": "electron-vite-svelte-ts",
-  "version": "0.1.0",
-  "description": "A Electron application create by Vite",
-  "main": "./dist/main/main.cjs.js",
-  "repository": "https://github.com/chrisxvin/electron-vite-svelte-ts.git",
-  "author": "Chris Liu <xvin2012@gmail.com>",
-  "license": "MIT",
-  "private": true,
-  "workspaces": {
-    "packages": [
-      "src/*"
-    ]
-  },
-  "scripts": {
-    "dev": "node ./scripts/dev-runner",
-    "build": "node ./scripts/build"
-  },
-  "devDependencies": {
-    "chalk": "^4.1.1",
-    "electron": "^20.0.2",
-    "electron-builder": "^23.3.3",
-    "listr": "^0.14.3",
-    "vite": "^3.0.7"
-  }
+    "name": "electron-vite-svelte-ts",
+    "version": "0.1.0",
+    "description": "A Electron application create by Vite",
+    "main": "./dist/main/main.cjs.js",
+    "repository": "https://github.com/chrisxvin/electron-vite-svelte-ts.git",
+    "author": "Chris Liu <xvin2012@gmail.com>",
+    "license": "MIT",
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "src/*"
+        ]
+    },
+    "scripts": {
+        "dev": "node ./scripts/dev-runner",
+        "build": "node ./scripts/build"
+    },
+    "devDependencies": {
+        "chalk": "^4.1.1",
+        "electron": "^20.0.2",
+        "electron-builder": "^23.3.3",
+        "listr": "^0.14.3",
+        "vite": "^3.0.7"
+    }
 }

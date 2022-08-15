@@ -1,12 +1,13 @@
 {
-  "name": "@app/main",
-  "version": "0.0.0",
-  "dependencies": {
-    "electron": "^20.0.2"
-  },
-  "devDependencies": {
-    "@types/node": "^18.7.4",
-    "rollup-plugin-auto-external": "^2.0.0",
-    "vite": "^3.0.7"
-  }
+    "name": "@app/main",
+    "version": "0.1.0",
+    "dependencies": {
+        "electron": "^20.0.2"
+    },
+    "devDependencies": {
+        "@types/node": "^18.7.4",
+        "@types/rollup-plugin-auto-external": "^2.0.2",
+        "rollup-plugin-auto-external": "^2.0.0",
+        "vite": "^3.0.7"
+    }
 }
