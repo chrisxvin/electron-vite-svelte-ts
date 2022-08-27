@@ -1,9 +1,9 @@
-const path = require("path");
-const chalk = require("chalk");
-const electron = require("electron");
-const { spawn } = require("child_process");
-const { createServer, createLogger, build } = require("vite");
-const { MAIN_ROOT, RENDERER_ROOT } = require("./constants");
+import { dirname, resolve, join } from "path";
+import chalk from "chalk";
+import electron from "electron";
+import { spawn } from "child_process";
+import { createServer, createLogger, build } from "vite";
+import { MAIN_ROOT, RENDERER_ROOT } from "./constants.mjs";
 
 let manualRestart;
 let electronProcess;
@@ -29,7 +29,7 @@ async function watchMainProcess() {
             mode: "development",
             build: {
                 emptyOutDir: false,
-                outDir: path.resolve(__dirname, "../dist/dev"),
+                outDir: resolve("./dist/dev"),
                 watch: true,
             },
         });
@@ -48,8 +48,12 @@ async function watchMainProcess() {
     }
 }
 
+/**
+ * Start Electron Process
+ * @param {string} RENDERER_URL Url for renderer
+ */
 function startElectron(RENDERER_URL) {
-    let args = ["--inspect=5858", path.join(__dirname, "../dist/dev/main.js")];
+    let args = ["--inspect=5858", resolve("./dist/dev/main.js")];
 
     if (process.env.npm_execpath.endsWith("yarn.js")) {
         args = args.concat(process.argv.slice(3));

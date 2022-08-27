@@ -1,11 +1,11 @@
-const path = require("path");
-const chalk = require("chalk");
-const ListR = require("listr");
-const builder = require("electron-builder");
-const { build: viteBuild, createLogger } = require("vite");
+import { resolve } from "path";
+import chalk from "chalk";
+import ListR from "listr";
+import { build as electronBuild } from "electron-builder";
+import { build as viteBuild, createLogger } from "vite";
 
-const builderConfig = require("../build.config");
-const { MAIN_ROOT, RENDERER_ROOT } = require("./constants");
+import builderConfig from "../build.config.mjs";
+import { MAIN_ROOT, RENDERER_ROOT } from "./constants.mjs";
 
 function build() {
     const tasks = new ListR([
@@ -22,7 +22,7 @@ function build() {
     tasks
         .run()
         .then(() => {
-            builder.build(builderConfig);
+            electronBuild(builderConfig);
         })
         .catch((error) => {
             createLogger().error(
@@ -38,13 +38,13 @@ async function buildRenderer() {
             root: RENDERER_ROOT,
             base: "./",
             build: {
-                outDir: path.resolve(__dirname, "../dist/renderer"),
+                outDir: resolve("./dist/renderer"),
             },
         });
         return rendererOutput;
     } catch (error) {
         createLogger().error(
-            chalk.red(`error during build renderer:\n${error.stack}`)
+          chalk.red(`error during build renderer:\n${error.stack}`)
         );
         process.exit(1);
     }
@@ -55,13 +55,13 @@ async function buildMainProcess() {
         const buildOutput = await viteBuild({
             root: MAIN_ROOT,
             build: {
-                outDir: path.resolve(__dirname, "../dist/main"),
+                outDir: resolve("./dist/main"),
             },
         });
         return buildOutput;
     } catch (error) {
         createLogger().error(
-            chalk.red(`error during build main process:\n${error.stack}`)
+          chalk.red(`error during build main process:\n${error.stack}`)
         );
         process.exit(1);
     }

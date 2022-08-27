@@ -196,10 +196,10 @@
   resolved "https://mirrors.huaweicloud.com/repository/npm/@types/node/-/node-16.11.48.tgz#22d386f32b24fb644940b606ed393b56be7d8686"
   integrity sha512-Z9r9UWlNeNkYnxybm+1fc0jxUNjZqRekTAr1pG0qdXe9apT9yCiqk1c4VvKQJsFpnchU4+fLl25MabSLA2wxIw==
 
-"@types/node@^18.7.4":
-  version "18.7.4"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/@types/node/-/node-18.7.4.tgz#95baa50846ae112a7376869d49fec23b2506c69d"
-  integrity sha512-RzRcw8c0B8LzryWOR4Wj7YOTFXvdYKwvrb6xQQyuDfnlTxwYXGCV5RZ/TEbq5L5kn+w3rliHAUyRcG1RtbmTFg==
+"@types/node@^18.7.13":
+  version "18.7.13"
+  resolved "http://mirrors.huaweicloud.com/repository/npm/@types/node/-/node-18.7.13.tgz#23e6c5168333480d454243378b69e861ab5c011a"
+  integrity sha512-46yIhxSe5xEaJZXWdIBP7GU4HDTG8/eo0qd9atdiL+lFpA03y8KS+lkTN834TWJj5767GbWv4n/P6efyTFt1Dw==
 
 "@types/plist@^3.0.1":
   version "3.0.2"
@@ -615,6 +615,11 @@ chalk@^4.0.2, chalk@^4.1.0, chalk@^4.1.1:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
+chalk@^5.0.1:
+  version "5.0.1"
+  resolved "http://mirrors.huaweicloud.com/repository/npm/chalk/-/chalk-5.0.1.tgz#ca57d71e82bb534a296df63bbacc4a1c22b2a4b6"
+  integrity sha512-Fo07WOYGqMfCWHOzSXOt2CxDbC6skS/jO9ynEcmpANMoPrD+W1r1K6Vx7iNm+AQmETU1Xr2t+n8nzkV9t6xh3w==
+
 chokidar@^3.4.1:
   version "3.5.3"
   resolved "https://mirrors.huaweicloud.com/repository/npm/chokidar/-/chokidar-3.5.3.tgz#1cf37c8707b932bd1af1ae22c0432e2acd1903bd"
@@ -977,10 +982,10 @@ electron-publish@23.3.3:
     lazy-val "^1.0.5"
     mime "^2.5.2"
 
-electron@^20.0.2:
-  version "20.0.2"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/electron/-/electron-20.0.2.tgz#5a610b07192a03979f83a35b9b9d1568a7f08c93"
-  integrity sha512-Op4nxSyXH0tXjhvWC+WDn9EI0gep5etPccainxu1A4wes+ZFQBMCBXxibotanJfG+WNW4RaOv88NArwHIsSmPw==
+electron@^20.1.0:
+  version "20.1.0"
+  resolved "http://mirrors.huaweicloud.com/repository/npm/electron/-/electron-20.1.0.tgz#2de079adc551dadc21f11d12a37c70873b9ffb40"
+  integrity sha512-gzl6fdZe5g0qmzCC6Ejxa1Oa8eqUSxs4+QLtrM7SyEVp+mEPJAOoDe0xD8ayRQqeXTBxLK1LFrKtc4c98iufsg==
   dependencies:
     "@electron/get" "^1.14.1"
     "@types/node" "^16.11.26"
@@ -2348,17 +2353,10 @@ rollup-plugin-auto-external@^2.0.0:
     safe-resolve "^1.0.0"
     semver "^5.5.0"
 
-rollup@>=2.0.0:
-  version "2.78.0"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/rollup/-/rollup-2.78.0.tgz#00995deae70c0f712ea79ad904d5f6b033209d9e"
-  integrity sha512-4+YfbQC9QEVvKTanHhIAFVUFSRsezvQF8vFOJwtGfb9Bb+r014S+qryr9PSmw8x6sMnPkmFBGAvIFVQxvJxjtg==
-  optionalDependencies:
-    fsevents "~2.3.2"
-
-"rollup@>=2.75.6 <2.77.0 || ~2.77.0":
-  version "2.77.3"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/rollup/-/rollup-2.77.3.tgz#8f00418d3a2740036e15deb653bed1a90ee0cc12"
-  integrity sha512-/qxNTG7FbmefJWoeeYJFbHehJ2HNWnjkAFRKzWN/45eNBBF/r8lo992CwcJXEzyVxs5FmfId+vTSTQDb+bxA+g==
+rollup@2.77.0, rollup@>=2.0.0, "rollup@>=2.75.6 <2.77.0 || ~2.77.0":
+  version "2.77.0"
+  resolved "http://mirrors.huaweicloud.com/repository/npm/rollup/-/rollup-2.77.0.tgz#749eaa5ac09b6baa52acc076bc46613eddfd53f4"
+  integrity sha512-vL8xjY4yOQEw79DvyXLijhnhh+R/O9zpF/LEgkCebZFtb6ELeN9H3/2T0r8+mp+fFTBHZ5qGpOpW2ela2zRt3g==
   optionalDependencies:
     fsevents "~2.3.2"
 
@@ -2859,6 +2857,18 @@ vite@^3.0.7:
   version "3.0.7"
   resolved "https://mirrors.huaweicloud.com/repository/npm/vite/-/vite-3.0.7.tgz#f1e379857e9c5d652126f8b20d371e1365eb700f"
   integrity sha512-dILhvKba1mbP1wCezVQx/qhEK7/+jVn9ciadEcyKMMhZpsuAi/eWZfJRMkmYlkSFG7Qq9NvJbgFq4XOBxugJsA==
+  dependencies:
+    esbuild "^0.14.47"
+    postcss "^8.4.16"
+    resolve "^1.22.1"
+    rollup ">=2.75.6 <2.77.0 || ~2.77.0"
+  optionalDependencies:
+    fsevents "~2.3.2"
+
+vite@^3.0.9:
+  version "3.0.9"
+  resolved "http://mirrors.huaweicloud.com/repository/npm/vite/-/vite-3.0.9.tgz#45fac22c2a5290a970f23d66c1aef56a04be8a30"
+  integrity sha512-waYABTM+G6DBTCpYAxvevpG50UOlZuynR0ckTK5PawNVt7ebX6X7wNXHaGIO6wYYFXSM7/WcuFuO2QzhBB6aMw==
   dependencies:
     esbuild "^0.14.47"
     postcss "^8.4.16"

@@ -1,7 +1,26 @@
 {
-    "editor.quickSuggestions": {
-        "strings": true
+    "editor.tabSize": 4,
+    "files.eol": "\n",
+    "files.encoding": "utf8",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.fixAll.eslint": true
     },
+    "html.format.wrapAttributes": "force-aligned",
+    "html.format.endWithNewline": true,
+    "typescript.format.semicolons": "insert",
+    "typescript.preferences.quoteStyle": "double",
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+    "javascript.format.semicolons": "insert",
+    "javascript.preferences.quoteStyle": "double",
+    "javascript.referencesCodeLens.enabled": true,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
     "beautify.language": {
         "js": {
             "type": ["javascript", "json"],
@@ -21,10 +40,6 @@
     "[svelte]": {
         "editor.defaultFormatter": "svelte.svelte-vscode"
     },
-    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
-    "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
-    "javascript.preferences.quoteStyle": "double",
-    "javascript.format.semicolons": "insert",
     "svelte.enable-ts-plugin": true,
     "svelte.plugin.svelte.format.config.printWidth": 150,
     "svelte.plugin.svelte.format.config.singleQuote": false,
@@ -37,5 +52,5 @@
     "svelte.plugin.svelte.format.config.tabWidth": 4,
     "svelte.plugin.svelte.format.config.trailingComma": "es5",
     "svelte.plugin.svelte.format.config.svelteSortOrder": "options-styles-scripts-markup",
-    "svelte.plugin.svelte.defaultScriptLanguage": "ts",
+    "svelte.plugin.svelte.defaultScriptLanguage": "ts"
 }

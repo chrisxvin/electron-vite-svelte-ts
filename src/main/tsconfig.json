@@ -1,13 +1,14 @@
 {
+    "extends": "../../tsconfig.json",
     "compilerOptions": {
-        "target": "ESNext",
-        "module": "ESNext",
         "strict": true,
-        "resolveJsonModule": true,
-        "esModuleInterop": true,
         "moduleResolution": "node",
-        "lib": ["ESNext", "DOM"]
     },
-    "include": ["**/*.ts", "**/*.d.ts"],
-    "exclude": ["node_modules"]
+    "include": [
+        "**/*.ts",
+        "**/*.d.ts",
+    ],
+    "exclude": [
+        "node_modules",
+    ],
 }

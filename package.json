@@ -2,7 +2,7 @@
     "name": "electron-vite-svelte-ts",
     "version": "0.1.0",
     "description": "A Electron application create by Vite",
-    "main": "./dist/main/main.cjs.js",
+    "main": "./dist/main/main.js",
     "repository": "https://github.com/chrisxvin/electron-vite-svelte-ts.git",
     "author": "Chris Liu <xvin2012@gmail.com>",
     "license": "MIT",
@@ -13,14 +13,20 @@
         ]
     },
     "scripts": {
-        "dev": "node ./scripts/dev-runner",
-        "build": "node ./scripts/build"
+        "dev": "node ./scripts/dev-runner.mjs",
+        "build": "node ./scripts/build.mjs"
     },
     "devDependencies": {
-        "chalk": "^4.1.1",
-        "electron": "^20.0.2",
+        "chalk": "^5.0.1",
+        "electron": "^20.1.0",
         "electron-builder": "^23.3.3",
         "listr": "^0.14.3",
-        "vite": "^3.0.7"
+        "vite": "^3.0.9"
+    },
+    "peerDevDependencies": {
+        "rollup": "2.77.0"
+    },
+    "resolutions": {
+        "**/rollup": "2.77.0"
     }
 }
