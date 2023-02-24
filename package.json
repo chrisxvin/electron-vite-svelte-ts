@@ -17,20 +17,18 @@
         "build": "node ./scripts/build.mjs"
     },
     "devDependencies": {
-        "@types/node": "^18.7.13",
-        "@typescript-eslint/eslint-plugin": "^5.35.1",
-        "@typescript-eslint/parser": "^5.35.1",
-        "chalk": "^5.0.1",
-        "electron": "^20.1.0",
-        "electron-builder": "^23.3.3",
-        "eslint": "^8.23.0",
+        "@types/node": "^18.14.1",
+        "@typescript-eslint/eslint-plugin": "^5.53.0",
+        "@typescript-eslint/parser": "^5.53.0",
+        "chalk": "^5.2.0",
+        "electron": "^23.1.1",
+        "electron-builder": "^23.6.0",
+        "eslint": "^8.34.0",
         "listr": "^0.14.3",
-        "vite": "^3.0.9"
+        "typescript": "^4.9.5",
+        "vite": "^4.1.4"
     },
-    "peerDevDependencies": {
-        "rollup": "2.77.0"
-    },
-    "resolutions": {
-        "**/rollup": "2.77.0"
+    "resolutions.old": {
+        "**/rollup": "3.17.2"
     }
 }
